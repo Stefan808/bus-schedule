@@ -1,3 +1,4 @@
 require './config/environment'
 
-run NewClass
+run ApplicationController
+use SessionsController

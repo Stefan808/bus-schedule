@@ -1,4 +1,6 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem 'sinatra'
+ruby '2.4.0'
+
+gem 'sinatra', :require => 'sinatra/base'

@@ -1,7 +1,9 @@
 class NewClass < Sinatra::Base
 	
+	set :views, Proc.new{ File.join(root, '../views/') }
+
 	get '/' do
-		"hello from sinata on heroku third step"
+		erb :index
 	end
 
 end

@@ -5,11 +5,3 @@ development:
   password: 5101443ura
   host:     localhost
   database: bus_schedule_dev
-
-production:
-  adapter: postgresql
-  encoding: utf8
-  username: yurii
-  password: 5101443ura
-  host:     localhost
-  database: bus_schedule_prod

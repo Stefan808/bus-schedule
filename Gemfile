@@ -10,3 +10,8 @@ gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 
 gem 'rake'
 gem 'pg'
+gem 'bcrypt'
+
+group :development do
+	gem 'tux'
+end

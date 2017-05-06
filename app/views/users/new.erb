@@ -1,0 +1,24 @@
+<form action="/users/new" method="post">
+	<div class="form-group">
+		<label for="user[email]">Email</label>
+		<input type="email" name="user[email]" class="form-control" placeholder="Email">		
+	</div>
+
+	<div class="form-group">
+    	<label for="user[username]">Username</label>
+    	<input type="text" name="user[username]" class="form-control" placeholder="Username">
+  </div>
+	
+	<div class="form-group">
+    	<label for="user[password]">Password</label>
+    	<input type="password" name="user[password]" class="form-control" placeholder="Password">
+  </div>
+
+	<div class="form-group">
+    	<label for="user[password_confirmation]">Password Confirmation</label>
+    	<input type="password" name="user[password_confirmation]" class="form-control" placeholder="Password Confirmation">
+  </div>
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+
+</form>

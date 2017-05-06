@@ -2,7 +2,7 @@ require 'bundler/setup'
 Bundler.require(:default)
 
 configure :development do
-	db = URI.parse('postgresql://yurii:5101443ura@localhost/bus_schedul_dev')
+	db = URI.parse('postgresql://yurii:5101443ura@localhost/bus_schedule_dev')
 
 	ActiveRecord::Base.establish_connection(
 		:adapter  => db.scheme,
@@ -15,7 +15,7 @@ end
 
 configure :production do
 	
-	db = URI.parse('postgresql://yurii:5101443ura@localhost/bus_schedul_pcod')
+	db = URI.parse('postgresql://yurii:5101443ura@localhost/bus_schedule_pcod')
 
 	ActiveRecord::Base.establish_connection(
 		:adapter  => db.scheme,

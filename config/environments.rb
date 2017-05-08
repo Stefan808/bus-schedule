@@ -14,7 +14,6 @@ configure :development do
 end
 
 configure :production do
-	
 	db = URI.parse(ENV['DATABASE_URL'] || 'postgresql://localhost/bus_schedule_pcod')
 
 	ActiveRecord::Base.establish_connection(

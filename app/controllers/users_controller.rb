@@ -10,4 +10,9 @@ class UsersController < ApplicationController
 		end
 	end
 
+	get "/users/:id" do
+		@user = current_user
+		erb :'users/view'
+	end
+
 end

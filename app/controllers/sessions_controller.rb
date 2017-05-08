@@ -15,9 +15,9 @@ class SessionsController < ApplicationController
 	end
 
   post "/login" do
-    @user = User.find_by(email: params[:email])
-    if @user && @user.authenticate(params[:password])
-      session[:user_id] = @user.id
+    user = User.find_by(email: params[:email])
+    if user && user.authenticate(params[:password])
+      session[:user_id] = user.id
       redirect to('/success')
     else
       @error = "You have problem with username or password"

@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
 	enable :sessions
 
 	get '/' do
-		erb :index
+		erb :'buses_journeys/index'
 	end
 
 	get "/singup" do

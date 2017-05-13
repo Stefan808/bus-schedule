@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 			redirect to("/success")
 		else
 			@error = user.errors.full_messages.to_sentence
-			halt erb(:"users/new")
+			halt erb(:'users/new')
 		end
 	end
 

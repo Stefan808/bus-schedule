@@ -1,0 +1,13 @@
+ <% if BusesJourneys.any? %>
+    	<div class="row">
+        <div class="col-md-4">
+          <% BusesJourneys.all.each do |bus| %>
+            <h2><%= bus.departure_city%> -- <%= bus.arrival_city%></h2>
+            <p>Time of departure: <%=bus.time_of_departure.ctime%></p>          
+            <p><a class="btn btn-default" href="/buses_journeys/<%=bus.id%>" role="button">View details &raquo;</a></p>
+          <%end%>
+        </div>   		
+ 		  </div>
+    <%else%>
+      We do not have any journeys.
+    <%end%>

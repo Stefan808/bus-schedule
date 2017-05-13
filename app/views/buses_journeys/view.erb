@@ -1,0 +1,33 @@
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>Header</th>
+			<th>Info</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Departure city:</td>
+			<td><%= @bus.departure_city %></td>
+		</tr>
+		<tr>
+			<td>Time of departure:</td>
+			<td><%= @bus.time_of_departure.ctime%></td>
+		</tr>
+		<tr>
+			<td>Arrival city:</td>
+			<td><%= @bus.arrival_city%></td>
+		</tr>
+		<tr>
+			<td>Time of arrival:</td>
+			<td><%= @bus.time_of_arrival.ctime%></td>
+		</tr>
+		<tr>
+			<td>There are still seats:</td>
+			<td><%= @bus.number_of_seats%></td>
+		</tr>
+	</tbody> 
+</table>
+<form action="#<%#= @thing.id %>" method="post">
+	<button type="submit" class="btn btn-primary">Buy ticket</button>	
+</form>

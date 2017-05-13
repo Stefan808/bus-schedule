@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   #   ROLES.index(base_role.to_s) <= ROLES.index(role)
   # end
 
-  #after_create :default_role
+  after_create :default_role
 
   private
 

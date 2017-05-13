@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 
 	get "/users/:id" do
 		@user = current_user
+    	authorize! :read, @user
 		erb :'users/view'
 	end
 

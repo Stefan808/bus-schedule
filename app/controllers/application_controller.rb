@@ -1,5 +1,7 @@
 class ApplicationController < Sinatra::Base
-	
+
+	register Sinatra::Can
+
 	set :views, Proc.new{ File.join(root, '../views/') }
 
 	helpers do

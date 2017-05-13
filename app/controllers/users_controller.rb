@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
 
 	post "/users/new" do
-		user = User.new params[:user]
-		if user.save
+		# user = User.new params[:user]
+		user = User.create params[:user]
+		if user.valid?
 			redirect to("/success")
 		else
 			@error = user.errors.full_messages.to_sentence

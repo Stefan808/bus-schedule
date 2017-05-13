@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
       redirect to('/success')
     else
       @error = "You have problem with username or password"
-      halt erb(:'index')
+      halt erb(:'buses_journeys/index')
     end
   end
 
